@@ -48,10 +48,75 @@ export interface Leagues {
     strLocked:          string;
 }
 export interface TeamsProp {
-    league: Team[];
+    league: string
 }
+
 export interface Team {
-    id: string,
-    name : string
-}
+    idTeam: string;
+    idSoccerXML?: string;
+    idAPIfootball: string;
+    intLoved?: string;
+    strTeam: string;
+    strTeamShort?: string;
+    strAlternate: string;
+    intFormedYear: string;
+    strSport: string;
+    strLeague: string;
+    idLeague: string;
+    strLeague2: string;
+    idLeague2?: string;
+    strLeague3: string;
+    idLeague3?: string;
+    strLeague4: string;
+    idLeague4?: string;
+    strLeague5: string;
+    idLeague5?: string;
+    strLeague6: string;
+    idLeague6?: string;
+    strLeague7: string;
+    idLeague7?: any;
+    strDivision?: any;
+    strManager: string;
+    strStadium: string;
+    strKeywords: string;
+    strRSS: string;
+    strStadiumThumb?: string;
+    strStadiumDescription?: string;
+    strStadiumLocation: string;
+    intStadiumCapacity: string;
+    strWebsite: string;
+    strFacebook: string;
+    strTwitter: string;
+    strInstagram: string;
+    strDescriptionEN: string;
+    strDescriptionDE?: any;
+    strDescriptionFR?: any;
+    strDescriptionCN?: any;
+    strDescriptionIT?: string;
+    strDescriptionJP?: any;
+    strDescriptionRU?: any;
+    strDescriptionES?: string;
+    strDescriptionPT?: any;
+    strDescriptionSE?: any;
+    strDescriptionNL?: any;
+    strDescriptionHU?: any;
+    strDescriptionNO?: any;
+    strDescriptionIL?: any;
+    strDescriptionPL?: any;
+    strKitColour1?: string;
+    strKitColour2?: string;
+    strKitColour3?: string;
+    strGender: string;
+    strCountry: string;
+    strTeamBadge: string;
+    strTeamJersey?: string;
+    strTeamLogo?: string;
+    strTeamFanart1?: string;
+    strTeamFanart2?: string;
+    strTeamFanart3?: string;
+    strTeamFanart4?: string;
+    strTeamBanner?: string;
+    strYoutube: string;
+    strLocked: string;
+  }
 

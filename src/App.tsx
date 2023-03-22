@@ -1,12 +1,11 @@
 import React from "react";
-import LeagueTabs from "./components/LeagueTabs";
+import LeagueTabs from "./components/leagueTabs/LeagueTabs";
 
 const App: React.FC = () => {
   return (
     <>
       <div>
-        app
-        <h1>foot ball Spain league</h1>
+        <h1>foot ball England league</h1>
         <div>
           <LeagueTabs />
         </div>
