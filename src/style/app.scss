@@ -1,8 +1,15 @@
 @import "./leagueTabs", "./teamsList", "./styleService";
-
+* {
+  padding: 0px;
+  margin: 0px;
+}
 body {
-  @include container(100%, column);
+  width: 100%;
   background-color: #d3d9d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 header {
   .uefa-logo {

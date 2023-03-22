@@ -13,9 +13,8 @@ const App: React.FC = () => {
           />
           <h1>Europa Leagues</h1>
         </header>
-        <div>
-          <LeagueTabs />
-        </div>
+
+        <LeagueTabs />
       </body>
     </>
   );

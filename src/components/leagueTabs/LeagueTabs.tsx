@@ -8,8 +8,9 @@ const LeagueTabs: React.FC = () => {
   const [leagueData, setLeagueData] = useState<Leagues[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [teams, setTeams] = useState<Team[]>([]);
-
+  const [tabsCheck, setTabsCheck] = useState<string>();
   const fetchTeams = async (name: string) => {
+    setTabsCheck(name);
     setIsLoading(true);
     const { data } = await getTeamsInLeague(name);
     setTeams(data.teams);
@@ -29,8 +30,12 @@ const LeagueTabs: React.FC = () => {
       <div className="league-container">
         {Array.isArray(leagueData) &&
           leagueData.length > 0 &&
-          leagueData.slice(1, 7).map((league, index) => (
-            <button key={index} onClick={() => fetchTeams(league.strLeague)}>
+          leagueData.slice(2, 7).map((league, index) => (
+            <button
+              className={tabsCheck === league.strLeague ? "btn-chose" : "btn"}
+              key={index}
+              onClick={() => fetchTeams(league.strLeague)}
+            >
               {league.strLeague}
             </button>
           ))}
@@ -45,9 +50,7 @@ const LeagueTabs: React.FC = () => {
           </div>
         </div>
       ) : (
-        <div>
-          <TeamsList teamsLeague={teams} />
-        </div>
+        <TeamsList teamsLeague={teams} />
       )}
     </>
   );
