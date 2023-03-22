@@ -1,0 +1,11 @@
+@import "./styleService";
+.league-container {
+  @include container(100%);
+  @include btn-click;
+}
+.loading {
+  @include container(100%);
+  display: flex;
+  justify-content: center;
+  @include loading-animation;
+}

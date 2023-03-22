@@ -1,0 +1,15 @@
+@import "./leagueTabs", "./teamsList", "./styleService";
+
+body {
+  @include container(100%, column);
+  background-color: #d3d9d2;
+}
+header {
+  .uefa-logo {
+    width: 70px;
+    margin-right: 10px;
+  }
+  @include container;
+  text-align: center;
+  font-family: $font-family;
+}
