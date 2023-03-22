@@ -2,16 +2,26 @@
 * {
   padding: 0px;
   margin: 0px;
-}
-body {
-  width: 100%;
   background-color: #d3d9d2;
+}
+.html-container {
+  @include container(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+.body-container {
+  @include container;
+  // height: ;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-header {
+.header-container {
   .uefa-logo {
     width: 70px;
     margin-right: 10px;

@@ -16,5 +16,6 @@
   @include container;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   @include loading-animation;
 }

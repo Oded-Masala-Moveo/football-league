@@ -4,18 +4,19 @@ import "./style/app.scss";
 const App: React.FC = () => {
   return (
     <>
-      <body>
-        <header>
+      <div className="html-container">
+        <div className="header-container">
           <img
             className="uefa-logo"
             src="https://1000logos.net/wp-content/uploads/2022/01/UEFA-logo.png"
             alt="EEFA logo"
           />
           <h1>Europa Leagues</h1>
-        </header>
-
-        <LeagueTabs />
-      </body>
+        </div>
+        <div className="body-container">
+          <LeagueTabs />
+        </div>
+      </div>
     </>
   );
 };

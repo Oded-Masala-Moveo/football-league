@@ -12,14 +12,15 @@
   font-family: $font-family;
   font-size: x-large;
   font-weight: bold;
-  cursor: pointer;
   text-align: center;
   color: #fff;
+  border: none;
   background-color: #125914df;
   border-bottom: 5px solid white;
 }
 
 @mixin loading-animation {
+  height: 1000px;
   .lds-ellipsis {
     display: inline-block;
     position: relative;
